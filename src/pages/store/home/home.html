@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Store - Catálogo</title>
+  <link rel="stylesheet" href="../../../style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <h1><i class="fa-solid fa-store"></i> Food Store</h1>
+    <nav>
+      <a href="./home.html">Catálogo</a>
+      <a href="../cart/cart.html">
+        <i class="fa-solid fa-cart-shopping"></i> Carrito<span class="cart-badge" id="cart-badge">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <div class="layout">
+
+    <aside>
+      <h2>Categorías</h2>
+      <ul id="lista-categorias"></ul>
+    </aside>
+
+    <main>
+      <div class="search-bar">
+        <input type="text" id="input-busqueda" placeholder="Buscar productos por nombre..." />
+      </div>
+
+      <h2 id="titulo-catalogo">Productos</h2>
+      <section id="contenedor-productos"></section>
+    </main>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Food Store — Programación III | Camilo Quiroga</p>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script type="module" src="./home.ts"></script>
+</body>
+</html>
